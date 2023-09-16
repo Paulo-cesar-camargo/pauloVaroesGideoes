@@ -1,0 +1,55 @@
+/* Estilos gerais */
+body {
+    background-color: #f0752d;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* titulo */
+.titulo{
+    text-align: center;
+    color: #fff;
+}
+header{
+    background-color: #333;
+}
+
+/* Estilos do grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas grandes */
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100px;
+}
+button{
+    background-color: #d4711f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    
+}
+button:hover{
+    background-color: #007bff;   
+    cursor: pointer;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* Estilos responsivos para telas menores */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+}
